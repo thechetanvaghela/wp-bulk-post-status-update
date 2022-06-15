@@ -1,0 +1,52 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+#wpbpus-setting-container select#wp-bulk-post-status-support-types {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /*background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;*/
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  z-index: 1;
+  outline: none;
+}
+
+#wpbpus-setting-container .select.wpbpus-select-multiple {
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+  position: relative;
+  min-width: 15ch;
+  max-width: 50ch;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+}
+#wpbpus-setting-container label.wpbpus-lable
+{
+    padding-bottom: 10px;
+}
+
+#wpbpus-setting-container span.wpbpus-note{
+    margin-top: 20px;
+    padding: 5px;
+    /*border: 1px solid;*/
+    font-size: 16px;
+}
+
+#wpbpus-setting-container .uninstall-wrap
+{
+    margin-top: 20px;
+}
