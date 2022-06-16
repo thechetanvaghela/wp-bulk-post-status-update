@@ -236,7 +236,7 @@ class Wp_Bulk_Post_Status_Update_Admin {
 				{
 		        	if (isset($_POST['wp-bulk-post-status-support-types'])) 
 		        	{
-		                $selected_value = array_map( 'esc_attr', $_POST['wp-bulk-post-status-support-types'] );
+		                $selected_value = array_map( 'sanitize_text_field', $_POST['wp-bulk-post-status-support-types'] );
 		                $save_selected = !empty($selected_value) ? $selected_value : array();
 		                # save values to database
 		                update_option('wp-bulk-post-status-support-types', $save_selected);
